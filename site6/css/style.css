@@ -1,0 +1,141 @@
+@import url('common.css');
+
+header{}
+header article{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+header article h1{}
+header article h1 a{}
+
+header article nav{}
+header article nav a{}
+
+
+main{}
+.visual{
+    background: #f3f3f3;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.visual strong{
+    font-size: 3em; 
+}
+.visual p{
+    white-space: pre-line;
+    text-align: center;
+}
+
+.list{}
+.list li{}
+.list li figure{
+}
+.list li figure img{
+    width: 100%;
+}
+.list li figure figcaption{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+/*1 background: rgba(33,191,185,0.6);*/
+    background: linear-gradient(0deg,rgb(33,191,185) 20%,transparent 50%);
+    padding-bottom: 5%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+    
+}
+.list li:hover figure figcaption{
+    opacity: 1;
+}
+
+
+
+footer{}
+
+/*======================768======================*/
+
+@media (max-width:480px){
+    .visual{
+    background: #f3f3f3;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.visual strong{
+    font-size: 1.4em; 
+}
+.visual p{
+    white-space: normal;
+    text-align: center;
+    padding: 0 10vw;
+}
+
+}
+@media print{
+    header{display: none};
+}
+
+/*======================768======================*/
+
+@media (min-width:768px) and (max-width:992px){
+    .list li figure figcaption{
+    position: static;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+/*1 background: rgba(33,191,185,0.6);*/
+    background: none;
+    padding-bottom: 5%;
+    
+    display: block;
+    justify-content: center;
+    align-items: flex-end;
+    color: #000;
+    opacity: 1;
+    transition: .5s;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/*======================992======================*/
+@media (min-width:992px) and (max-width:1169px){
+    
+    
+}
+    
+}
+
+/*======================1170======================*/
+@media (min-width:1170px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
