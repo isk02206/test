@@ -1,0 +1,125 @@
+@import url('../css/common.css');
+
+header{}
+header > div{
+    width: 1140px;
+    margin: 70px auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div h1{}
+header div h1 a{
+    font-weight: bolder;
+}
+
+header div nav{}
+header div nav ul{}
+header div nav ul li{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    
+    
+}
+header div nav ul li > a{
+    padding: 20px;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 20px;
+}
+header div nav ul li > a:hover{
+    border-bottom: 2px solid #000;
+}
+
+main{
+    width: 1140px;
+    margin: 0 auto;
+}
+main .con_1{
+    background: url('../img/img_1.jpg') no-repeat;
+    height: 550px;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: stretch; 
+}
+main .con_1 p{
+    color: #fff;
+    white-space: pre-line;
+    text-align: center;
+    font-size: 90px;
+    font-weight: bolder;
+}
+/*
+main > p{
+    padding: 71px 0 9px 0;
+    font-size: 25px;
+    text-align: right;
+    font-weight: bolder;  
+*/
+
+main .con_2{
+    padding:  71px 0 98px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main .con_2 article{
+    padding: 71px 0 9px 0;
+    white-space: pre-line;
+    width: 500px;
+
+}
+
+
+main .con_2 article a{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+main .con_2 article h2{
+    font-size: 60px;
+
+}
+
+main .con_2 .con_3 img{
+    width: 540px;
+    height: 260px;
+}
+main .con_2 .con_3{
+    width: 540px;
+}
+main .con_2 .con_3 p{
+    padding: 71px 0 9px 0;
+    font-size: 25px;
+    text-align: right;
+    font-weight: bolder;
+}
+
+
+footer div{
+    width: 100%;
+    display: inline-block;
+    background: #434343;
+    height: 82px;
+}
+footer div p{
+    line-height: 82px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+main aside{
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 360px;
+    top: 70%;
+
+}
