@@ -1,0 +1,181 @@
+@import url('common.css');
+
+/*.wrap{border: 2px solid #f00;}*/
+header{
+
+    border: 2px solid #000;
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+header .top .eng{
+    display: inline-block;
+}
+header .top{
+    width: 100%;
+    position: relative;
+    padding: 20px 0 40px 0;
+    display: inline-block;
+}
+header .top > a{
+    padding-right: 15px;
+}
+header .top .eng{
+}
+header .top  ul{
+    display: none;
+    position: absolute;
+    background:#fff;
+    padding:0 10px 0 10px; 
+    opacity: .8;
+}
+header .top ul li a{
+    font-size: .6em;
+    display: block;
+    color: #000;
+    padding:0 10px 10px 10px; 
+}
+header .top:hover ul{
+    display: block;
+    z-index: 1;
+}
+header .middle ul li a{
+    font-size: 20px;
+}
+
+header .middle a img{
+    transform: rotate(-40deg);
+}
+header .middle ul{
+    padding-top:60px;
+}
+header .middle ul li{
+    padding: 15px;
+}
+header .middle{
+    text-align: center;
+    height: 85%;
+}
+header .middle ul li select{
+    width: 80%;
+}
+header .last{
+    text-align: center;
+}
+main{
+    width: 100%;
+/*    border: 2px solid #00f;*/
+    float: right !important;
+}
+main div{
+    width: 100%;
+    height: 100%;
+}
+main div div{
+    width: 100%;
+    height: 100%;
+}
+main div div a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+main div div a h2{
+    padding: 0;
+    margin: 0;
+    padding: 5%;
+    position: absolute;
+    top: 60%;
+    z-index: 1;
+    
+}
+main div div a:hover h2{
+    position: absolute;
+    top: 0;
+    transition: .5s;
+    
+}
+main div div a p{
+    margin: 0;
+    padding: 0 5% 0 5%;
+    top: 70%;
+    white-space: pre-line;
+    position: absolute;
+    color: white;
+    z-index: 1;
+
+    
+}
+main div div a:hover p{
+    top: 10%;
+    white-space: pre-line;
+    position: absolute;
+    transition: .5s;
+    
+}
+main div div a p strong{
+    font-size: 60px;
+    color: white;
+    z-index: 1;
+}
+main div div a:after{
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: #000;
+    opacity: .5;
+    border-radius: 30px;
+
+}
+main div div a:hover:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    transition: .5s;
+    border-radius: 30px;
+
+}
+main div div a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.col-md-4{
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
