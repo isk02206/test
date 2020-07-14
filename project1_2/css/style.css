@@ -1,0 +1,575 @@
+@import url('common.css');
+
+@font-face {
+    font-family: "humun";
+    src: url('../humun.ttf');
+}
+
+@font-face {
+    font-family: "HCRDotum";
+    src: url("../HCRDotum.ttf");
+}
+
+header {
+    background: #12252d;
+    height: 100%;
+    position: fixed !important;
+}
+
+header .logo {
+    padding: 100px 0;
+}
+
+header .logo a {
+    display: flex;
+    justify-content: center;
+}
+
+header .logo a img {}
+
+header .header_title {
+    font-family: "humun", serif;
+}
+
+header .header_title h2 {
+    font-size: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 82px;
+    border-radius: 10px;
+    background-color: #27a98f;
+    color: white;
+}
+
+header .header_title ul {
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 0 90px 0;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header .header_title ul li {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header_title ul li.active img {
+    transform: rotate(90deg);
+}
+
+header .header_title ul li img {
+    margin-right: 20px;
+    width: 22px;
+    height: 75px;
+
+}
+
+header .header_title ul li a {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: #27a98f;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header .header_title ul li a.active {
+    color: white;
+}
+
+header footer {
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 5% 5%;
+
+
+}
+
+header footer p {
+    font-family: "HCRDotum", serif;
+    white-space: pre-line;
+    font-size: 8px;
+    color: #27a98f;
+}
+
+/*====================main========================*/
+main{
+    float: right !important;
+}
+main .ticket {
+    width: 160px;
+    height: 250px;
+    background: #e6e6e6;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    top: 20%;
+    right: 6%;
+    z-index: 1;
+}
+
+main .ticket .ticket_contents {
+    width: 90%;
+    margin: 0 auto;
+    padding: 6px 0;
+}
+
+main .ticket .ticket_contents > p {
+    font-size: 2em;
+    padding: 3px 0;
+    background: #27a98f;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+main .ticket .ticket_contents .date {
+    font-size: 1.1em;
+    font-weight: bold;
+
+}
+
+main .ticket .ticket_contents .date a.active {
+    background: #555;
+    color: #fff;
+}
+
+main .ticket .ticket_contents .date a {
+    display: block;
+    color: #555;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 8px 0;
+}
+
+main .ticket .ticket_contents .amount {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+main .ticket .ticket_contents .amount > p {
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    top: -15px;
+    left: 45%;
+}
+
+main .ticket .ticket_contents .amount .minus {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #27a98f;
+    position: absolute;
+    top: -5px;
+    left: 15%;
+}
+
+main .ticket .ticket_contents .amount .minus span {
+    color: #fff;
+}
+
+main .ticket .ticket_contents .amount .plus {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #27a98f;
+    position: absolute;
+    top: -5px;
+    right: 15%;
+}
+
+main .ticket .ticket_contents .amount .plus span {
+    color: #fff;
+}
+
+main .ticket .ticket_contents .ok {
+    font-size: 2em;
+    margin-top: 18px;
+    padding: 3px 0;
+    background: #27a98f;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+main .ticket .ticket_contents .ok a {
+    color: #fff;
+}
+
+main .ticket .sns {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+main .ticket .sns a {}
+
+main .ticket .sns a:hover {
+    text-decoration: none;
+}
+
+main .ticket .sns a img {}
+
+main .ticket .top {
+    width: 0;
+    height: 0;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    border-bottom: 40px solid #27a98f;
+    position: relative;
+    top: 100%;
+    left: 0;
+}
+
+main .ticket .top a {
+    position: absolute;
+    font-family: "humun", serif;
+    font-size: 25px;
+    color: #fff;
+    top: 10px;
+    left: -12px;
+}
+
+main nav {
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: #27a98f;
+
+}
+
+main nav:hover .pop_up {
+    visibility: visible;
+}
+
+main nav select {
+    background: none;
+    border: none;
+    right: 0px;
+    position: absolute;
+    top: 10%;
+    font-family: "humun", serif;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+main nav select option {
+    color: #27a98f;
+}
+
+
+
+main .menu-trigger {
+    width: 36px;
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    margin-right: 20px;
+    z-index: 2;
+    /*transform: translateY(-50%);*/
+}
+
+main .menu-trigger span {
+    width: 100%;
+    border-radius: 10px;
+    height: 6px;
+    background: #000;
+    position: absolute;
+    transition: .5s;
+    background: #27a98f;
+
+}
+
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+    left: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+    left: 0;
+}
+
+.menu-trigger:hover span:nth-of-type(1),
+.menu-trigger.active span:nth-of-type(1) {
+    transform: translateY(12px) rotate(45deg);
+
+}
+
+.menu-trigger:hover span:nth-of-type(2),
+.menu-trigger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.menu-trigger:hover span:nth-of-type(3),
+.menu-trigger.active span:nth-of-type(3) {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+main .page {
+    height: 100%;
+    padding: 100px 29.734% 14.867% 14.867%;
+    position: relative;
+}
+
+main .page .main_title {
+    font-family: "humun", serif;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+main .page .main_title h1 {
+    font-size: 85px;
+    color: #27a98f;
+
+}
+
+main .page .main_title .site_map {
+    align-items: flex-end;
+    color: #555;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+main .page .main_title .site_map > a {
+    text-decoration: underline;
+}
+
+main .page .main_title .site_map > p {
+    display: inline-block;
+}
+
+main .page .main_title .site_map > p:before {
+    content: '> ';
+
+}
+
+main .page .main_title .site_map .menu_title {
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: -4%;
+    background: #faf9f7;
+    visibility: hidden;
+
+
+}
+
+main .page .main_title .site_map:hover .menu_title {
+    visibility: visible;
+}
+
+main .page .main_title .site_map .menu_title a {
+    display: block;
+    font-size: 16px;
+    color: #555;
+}
+
+main .page .main_contents {
+    white-space: pre-line;
+    height: 100%;
+}
+
+main .page .main_contents p {
+    width: 100%;
+    height: 100%;
+    font-family: "HCRDotum", serif;
+}
+
+main nav .pop_up {
+    width: 1136px;
+    height: 400px;
+    position: relative;
+    top: 0;
+    right: 1240%;
+    background: #12252d;
+    z-index: 1;
+    text-align: center;
+    font-family: "humun", serif;
+    font-size: 30px;
+    opacity: .9;
+    visibility: hidden;
+}
+
+main nav .pop_up .pop_up_1 {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main nav .pop_up .pop_up_1 .pop_up_title {
+    padding: 20px;
+    font-size: 40px;
+    color: #fff;
+
+}
+
+main nav .pop_up .pop_up_2 .pop_up_title {
+    padding: 20px;
+    font-size: 40px;
+    color: #fff;
+
+}
+
+main nav .pop_up .pop_up_3 .pop_up_title {
+    padding: 20px;
+    font-size: 40px;
+    color: #fff;
+
+}
+
+main nav .pop_up .pop_up_4 .pop_up_title {
+    padding: 20px;
+    font-size: 40px;
+    color: #fff;
+
+}
+
+main nav .pop_up .pop_up_1 a {
+    display: block;
+    color: #27a98f;
+}
+
+main nav .pop_up .pop_up_2 a {
+    display: block;
+    color: #27a98f;
+}
+
+main nav .pop_up .pop_up_3 a {
+    display: block;
+    color: #27a98f;
+}
+
+main nav .pop_up .pop_up_4 a {
+    display: block;
+    color: #27a98f;
+}
+
+main nav .pop_up .pop_up_1 a:hover {
+    color: #fff;
+}
+
+main nav .pop_up .pop_up_2 a:hover {
+    color: #fff;
+}
+
+main nav .pop_up .pop_up_3 a:hover {
+    color: #fff;
+}
+
+main nav .pop_up .pop_up_4 a:hover {
+    color: #fff;
+}
+
+main nav .pop_up .pop_up_2 {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 25%;
+
+}
+
+main nav .pop_up .pop_up_3 {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+main nav .pop_up .pop_up_4 {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 75%;
+}
+
+
+/*======================768======================*/
+
+@media (max-width:480px) {
+    .visual {
+        background: #f3f3f3;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .visual strong {
+        font-size: 1.4em;
+    }
+
+    .visual p {
+        white-space: normal;
+        text-align: center;
+        padding: 0 10vw;
+    }
+
+}
+
+
+/*======================768======================*/
+
+@media (min-width:768px) and (max-width:992px) {
+    .list li figure figcaption {
+        position: static;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        /*1 background: rgba(33,191,185,0.6);*/
+        background: none;
+        padding-bottom: 5%;
+
+        display: block;
+        justify-content: center;
+        align-items: flex-end;
+        color: #000;
+        opacity: 1;
+        transition: .5s;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    /*======================992======================*/
+    @media (min-width:992px) and (max-width:1169px) {}
+
+}
+
+/*======================1170======================*/
+@media (min-width:1170px) {}
