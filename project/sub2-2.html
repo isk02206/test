@@ -10,7 +10,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
 
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
@@ -23,26 +23,25 @@
         <header class="col-md-3 col-sm-3 col-xs-12">
             <div class="logo">
                 <a href="#">
-                    <img src="img/logo.png">
+                    <img src="img/logo_makguli.png">
                 </a>
             </div>
             <div class="header_title">
                 <h2>프로그램 안내</h2>
                 <ul>
                     <li>
-                        <img src="img/logo_s.png">
                         <a href="#">
                             행사일정
                         </a>
                     </li>
-                    <li class="active">
-                        <img src="img/logo_s.png">
+                    <li>
+
                         <a href="#" class="active">
                             참가 이벤트 안내
                         </a>
                     </li>
                     <li>
-                        <img src="img/logo_s.png">
+
                         <a href="#">
                             참여업체
                         </a>
@@ -50,14 +49,7 @@
                 </ul>
             </div>
             <footer>
-                <p>회사소개이용약관개인정보취급방침
-                    상호 : 대한민국 막걸리축제
-                    사업장주소 : 고양시 덕양구 고양시청로 16-5 유림빌딩 201호
-                    대표자 : 안재성
-                    대표안내전화 : 031-967-3131 FAX : 070-8119-3131
-                    개인정보보호책임자 : 안재성 사업자번호 : 000-0000-0000
-
-                    COPYRIGHT © 대한민국 막걸리축제 / all rights reserved.
+                <p>COPYRIGHT © 대한민국 막걸리축제 / all rights reserved.
                 </p>
             </footer>
         </header>
@@ -72,11 +64,11 @@
                         <a href="#" class="2day">2020.00.00</a>
                     </div>
                     <div class="amount">
-                        <div class="minus">
+                        <div class="minus" id="minus">
                             <span>-</span>
                         </div>
-                        <p>2</p>
-                        <div class="plus">
+                        <p id="quantity">0</p>
+                        <div class="plus" id="plus">
                             <span>+</span>
 
                         </div>
@@ -89,13 +81,13 @@
                 </div>
                 <div class="sns">
                     <a href="#">
-                        <img src="img/ic_fb.png">
+                        <img src="img/sns_facebook.png">
                     </a>
                     <a href="#">
-                        <img src="img/ic_tw.png">
+                        <img src="img/sns_twitter.png">
                     </a>
                     <a href="#">
-                        <img src="img/ic_ig.png">
+                        <img src="img/sns_instagram.png">
                     </a>
                 </div>
 
@@ -147,12 +139,9 @@
         <main class="col-md-9 col-sm-9 col-xs-12">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-
                     <div class="page">
-
                         <div class="main_title">
                             <h1>참가 이벤트 안내</h1>
-
                             <div class="site_map">
                                 <div class="site_map_2">
                                     프로그램 안내
@@ -167,8 +156,7 @@
                                 <p>참가 이벤트 안내</p>
                             </div>
                         </div>
-
-                        <div  class="main_contents">
+                        <div class="main_contents">
                             <ul class="event">
                                 <li>
                                     <img src="img/event01.jpg" class="col-md-6 col-sm-6 col-xs-6">
@@ -217,30 +205,54 @@
 
                             </ul>
 
-
+                           
                         </div>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
-
     <script>
         const menu = document.querySelector('.menu-trigger');
 
         const pop_up = document.querySelector('.pop_up');
 
-        const date_select = document.querySelector('.date a')
+        const date_select = document.querySelectorAll('.date a');
+
 
         menu.addEventListener('click', function() {
             menu.classList.toggle('active');
             pop_up.classList.toggle('active');
         });
-        date_select.addEventListener('click', function() {
-            date_select.classList.toggle('active');
-        })
 
+        let j = 0;
+        for (let i = 0; i < date_select.length; i++) {
+            date_select[i].addEventListener('click', function() {
+                date_select[j].classList.remove('active');
+                date_select[i].classList.add('active');
+                j = i;
+            })
+        }
+
+        var k = 0;
+        var plus = document.getElementById('plus');
+        var minus = document.getElementById('minus')
+        var quantity = document.getElementById('quantity');
+        plus.addEventListener('click', function() {
+            if(k<9){
+                k += 1;
+                quantity.textContent = k;
+            }
+        });
+        
+        minus.addEventListener('click',function(){
+            k -= 1;
+            if(k <= 0){
+                k = 0;
+            }
+            quantity.textContent = k;
+        })
+        
     </script>
 
 
@@ -248,6 +260,4 @@
 
 
 
-</body>
-
-</html>
+</body></html>

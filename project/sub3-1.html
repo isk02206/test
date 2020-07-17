@@ -57,11 +57,11 @@
                         <a href="#" class="2day">2020.00.00</a>
                     </div>
                     <div class="amount">
-                        <div class="minus">
+                        <div class="minus" id="minus">
                             <span>-</span>
                         </div>
-                        <p>2</p>
-                        <div class="plus">
+                        <p id="quantity">0</p>
+                        <div class="plus" id="plus">
                             <span>+</span>
 
                         </div>
@@ -217,14 +217,39 @@
 
         const pop_up = document.querySelector('.pop_up');
 
-        const date_select = document.querySelector('.date a')
+        const date_select = document.querySelectorAll('.date a')
 
         menu.addEventListener('click', function() {
             menu.classList.toggle('active');
             pop_up.classList.toggle('active');
         });
-        date_select.addEventListener('click', function() {
-            date_select.classList.toggle('active');
+        let j = 0;
+        for (let i = 0; i < date_select.length; i++) {
+            date_select[i].addEventListener('click', function() {
+                date_select[j].classList.remove('active');
+                date_select[i].classList.add('active');
+                j = i;
+            })
+        }
+
+        var k = 0;
+        k < 10;
+        var plus = document.getElementById('plus');
+        var minus = document.getElementById('minus')
+        var quantity = document.getElementById('quantity');
+        plus.addEventListener('click', function() {
+            if(k<9){
+                k += 1;
+                quantity.textContent = k;
+            }
+        });
+        
+        minus.addEventListener('click',function(){
+            k -= 1;
+            if(k <= 0){
+                k = 0;
+            }
+            quantity.textContent = k;
         })
     </script>
 
