@@ -105,8 +105,8 @@ header footer p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    right: 4%;
-    top: 2%;
+    right: 70px;
+    top: 20px;
     font-family: "humun", serif;
 
 }
@@ -682,8 +682,8 @@ main .page .main_contents {
         border: none;
         right: 0px;
         position: fixed;
-        top: 1.5%;
-        right: 7%;
+        top: 12px;
+        right: 60px;
         font-family: "humun", serif;
         font-size: 1.5em;
         z-index: 4;

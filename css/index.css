@@ -209,6 +209,8 @@ main {
 
 .popup {
     position: fixed;
+    transform-origin: 100% 15%;
+
     z-index: 1;
     top: 20%;
     right: 1%;
@@ -672,6 +674,7 @@ footer span {
         width: 100%;
         display: block;
         position: fixed;
+        z-index: 1;
         top: 0;
         background: #12252d;
         margin: 0;
@@ -693,8 +696,10 @@ footer span {
         top: 12px;
     }
 
-    .menu-trigger {
-        transform: translate(30px, -82px);
+    .rt {
+        position: fixed;
+        top: 1%;
+        right: 1%;
     }
 
     .popup {
@@ -710,7 +715,7 @@ footer span {
         position: fixed;
         right: -100%;
         top: 0;
-        width: 80%;
+        width: 90%;
         height: 100%;
         background: rgba(0, 0, 0, 0.9);
         z-index: -1;
@@ -718,13 +723,13 @@ footer span {
     }
 
     .pop_up_ {
-        margin: 50px 0 0 60px;
-        transform: translateY(200%);
+        margin: 10vw 0 0 10vw;
+
     }
 
     .pop_up_ .pop_up_title {
         display: inline-block;
-        font-size: 35px;
+        font-size: 6vw;
         color: #e55358;
         margin-bottom: 15px;
     }
@@ -734,9 +739,9 @@ footer span {
     }
 
     .pop_up_ span a {
-        font-size: 25px;
+        font-size: 4.5vw;
         color: #fff;
-        padding: 0 20px;
+        padding: 0 4vw;
     }
 
     .pop_up_ span a:hover {
@@ -744,6 +749,19 @@ footer span {
     }
 
     /*===== event =======*/
+    .sub {
+        font-size: 3.5vw;
+        margin: 90px 0 50px 0;
+        padding: 15px 30px;
+    }
+
+    .sub a {
+        font-size: 3vw;
+        padding: 12px 20px;
+        margin-left: 25px;
+    }
+
+
     .info_event {
         display: flex;
         flex-direction: column;
@@ -838,7 +856,25 @@ footer span {
         font-size: 3.5vw;
     }
 
-    /*=============참가이벤===============*/
+    /*=============메인===============*/
+    .popup {
+        transform: rotate(-90deg);
+        transform-origin: 100% 15%;
+        transition: .5s;
+
+        position: fixed;
+        z-index: 1;
+        top: 20%;
+        right: 1%;
+    }
+    
+   .popup .pop_ticket b.active .popup{
+        transform: rotate(0);
+
+    }
+    
+    
+
 
     .info_event article > h3 {
 

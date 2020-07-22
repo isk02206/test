@@ -105,8 +105,8 @@ header footer p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    right: 4%;
-    top: 2%;
+    right: 70px;
+    top: 20px;
     font-family: "humun", serif;
 
 }
@@ -625,7 +625,7 @@ main .page .main_contents .more a img {}
         position: fixed;
         right: -100%;
         top: 0;
-        width: 80%;
+        width: 90%;
         height: 100%;
         background: rgba(0, 0, 0, 0.9);
         z-index: -1;
@@ -633,13 +633,13 @@ main .page .main_contents .more a img {}
     }
 
     .pop_up_ {
-        margin: 50px 0 0 60px;
-        transform: translateY(100%);
+        margin: 10vw 0 0 10vw;
+ 
     }
 
     .pop_up_ .pop_up_title {
         display: inline-block;
-        font-size: 35px;
+        font-size: 6vw;
         color: #e55358;
         margin-bottom: 15px;
     }
@@ -649,9 +649,9 @@ main .page .main_contents .more a img {}
     }
 
     .pop_up_ span a {
-        font-size: 25px;
+        font-size: 4.5vw;
         color: #fff;
-        padding: 0 20px;
+        padding: 0 4vw;
     }
 
     .pop_up_ span a:hover {
@@ -698,8 +698,8 @@ main .page .main_contents .more a img {}
         border: none;
         right: 0px;
         position: fixed;
-        top: 1.5%;
-        right: 7%;
+        top: 12px;
+        right: 60px;
         font-family: "humun", serif;
         font-size: 1.5em;
         z-index: 4;

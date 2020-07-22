@@ -136,7 +136,7 @@
         </div>
     </aside>
 
-    <main>
+    <main role="main">
         <img class="spot" src="img/spot.jpg" alt="제 6회 대한만국 막걸리 페스티벌">
 
 
@@ -282,9 +282,14 @@
             const menu = document.querySelector('.menu-trigger');
             const sitemap = document.querySelector('.pop_up');
             const date_select = document.querySelectorAll('.date li a');
+            const buy = document.querySelector('.pop_ticket b');
 
             menu.addEventListener('click', function() {
                 menu.classList.toggle('active');
+            });
+            
+            buy.addEventListener('click', function() {
+                buy.classList.toggle('active');
             });
 
             let j = 0;

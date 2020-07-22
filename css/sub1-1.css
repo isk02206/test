@@ -105,8 +105,8 @@ header footer p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    right: 4%;
-    top: 2%;
+    right: 70px;
+    top: 20px;
     font-family: "humun", serif;
 
 }
@@ -120,6 +120,7 @@ header footer p {
     right: 0;
     top: 0;
     cursor: pointer;
+    
 }
 
 .menu-trigger span {
@@ -358,63 +359,6 @@ aside select {
 aside select option {
     color: #27a98f;
 }
-
-
-
-aside .menu-trigger {
-    width: 36px;
-    height: 30px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: 0;
-    z-index: 1;
-    /*transform: translateY(-50%);*/
-}
-
-aside .menu-trigger span {
-    width: 100%;
-    border-radius: 10px;
-    height: 6px;
-    background: #000;
-    position: absolute;
-    transition: .5s;
-    background: #27a98f;
-
-}
-
-aside .menu-trigger span:nth-of-type(1) {
-    top: 0;
-    left: 0;
-}
-
-aside .menu-trigger span:nth-of-type(2) {
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-aside .menu-trigger span:nth-of-type(3) {
-    bottom: 0;
-    left: 0;
-}
-
-
-aside .menu-trigger.active span:nth-of-type(1) {
-    transform: translateY(12px) rotate(45deg);
-
-}
-
-
-aside .menu-trigger.active span:nth-of-type(2) {
-    opacity: 0;
-}
-
-
-aside .menu-trigger.active span:nth-of-type(3) {
-    transform: translateY(-12px) rotate(-45deg);
-}
-
 main .page {
     height: 100%;
     padding: 100px 29.734% 14.867% 14.867%;
@@ -558,7 +502,7 @@ main .page .main_contents p {
         position: fixed;
         right: -100%;
         top: 0;
-        width: 80%;
+        width: 90%;
         height: 100%;
         background: rgba(0, 0, 0, 0.9);
         z-index: -1;
@@ -566,13 +510,13 @@ main .page .main_contents p {
     }
 
     .pop_up_ {
-        margin: 50px 0 0 60px;
-        transform: translateY(100%);
+        margin: 10vw 0 0 10vw;
+ 
     }
 
     .pop_up_ .pop_up_title {
         display: inline-block;
-        font-size: 35px;
+        font-size: 6vw;
         color: #e55358;
         margin-bottom: 15px;
     }
@@ -582,9 +526,9 @@ main .page .main_contents p {
     }
 
     .pop_up_ span a {
-        font-size: 25px;
+        font-size: 4.5vw;
         color: #fff;
-        padding: 0 20px;
+        padding: 0 4vw;
     }
 
     .pop_up_ span a:hover {
@@ -631,8 +575,8 @@ main .page .main_contents p {
         border: none;
         right: 0px;
         position: fixed;
-        top: 1.5%;
-        right: 7%;
+        top: 12px;
+        right: 60px;
         font-family: "humun", serif;
         font-size: 1.5em;
         z-index: 4;
@@ -661,4 +605,4 @@ main .page .main_contents p {
 }
 
 /*======================1170======================*/
-@media (min-width:1170px) {}
+@media (min-width:768px) and (max-width:1092px) {}
