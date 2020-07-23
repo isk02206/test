@@ -28,17 +28,17 @@ header .logo a {
 header .logo a img {}
 
 header .header_title {
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 }
 
 header .header_title h2 {
-    font-size: 40px;
+    font-size: 3vw;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    padding: 10px 0;
+    padding: 0.5vw 0;
     border-radius: 10px;
     background-color: #27a98f;
     color: white;
@@ -47,8 +47,8 @@ header .header_title h2 {
 header .header_title ul {
     width: 60%;
     margin: 0 auto;
-    padding: 30px 0 90px 0;
-    font-size: 30px;
+    padding: 2vw 0;
+    font-size: 2vw;
     display: flex;
     flex-direction: column;
 
@@ -60,13 +60,6 @@ header .header_title ul li {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-}
-
-header .header_title ul li img {
-    margin-right: 20px;
-    width: 22px;
-    height: 75px;
-
 }
 
 header .header_title ul li a {
@@ -92,7 +85,7 @@ header footer {
 }
 
 header footer p {
-    font-family: "HCRDotum", serif;
+    font-family: 'NanumGothic';
     white-space: pre-line;
     font-size: 8px;
     color: #27a98f;
@@ -107,7 +100,7 @@ header footer p {
     align-items: flex-start;
     right: 70px;
     top: 20px;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 
 }
 
@@ -174,7 +167,7 @@ header footer p {
 
 
 .pop_up_ {
-    margin: 100px 0 0 120px;
+    margin: 100px 0 0 7vw;
 }
 
 .pop_up_ .pop_up_title {
@@ -189,9 +182,9 @@ header footer p {
 }
 
 .pop_up_ span a {
-    font-size: 30px;
+    font-size: 2vw;
     color: #fff;
-    padding: 0 40px;
+    padding: 0 2.5vw;
 }
 
 .pop_up_ span a:hover {
@@ -212,6 +205,7 @@ aside .ticket {
     top: 20%;
     right: 6%;
     z-index: 1;
+    transform-origin: 100% -2%;
 }
 
 aside .ticket .ticket_contents {
@@ -321,20 +315,22 @@ aside .ticket .sns a:hover {
 
 aside .ticket .sns a img {}
 
-aside .ticket .top {
+aside .top {
     width: 0;
     height: 0;
     border-right: 25px solid transparent;
     border-left: 25px solid transparent;
     border-bottom: 40px solid #27a98f;
-    position: relative;
-    top: 150%;
-    left: 0;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    
+    z-index: 3;
 }
 
-aside .ticket .top a {
+aside .top a {
     position: absolute;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     font-size: 25px;
     color: #fff;
     top: 10px;
@@ -347,7 +343,7 @@ aside select {
     position: absolute;
     top: 2.3%;
     right: 1%;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     font-size: 1.5em;
     z-index: 1;
     color: #27a98f;
@@ -363,7 +359,7 @@ main .page {
 }
 
 main .page .main_title {
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -371,7 +367,7 @@ main .page .main_title {
 }
 
 main .page .main_title h1 {
-    font-size: 85px;
+    font-size: 6vw;
     color: #27a98f;
 
 }
@@ -379,7 +375,7 @@ main .page .main_title h1 {
 main .page .main_title .site_map {
     align-items: flex-end;
     color: #555;
-    font-size: 20px;
+    font-size: 1.2vw;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -425,7 +421,7 @@ main .page .main_title .site_map > .site_map_2:hover .menu_title {
 
 main .page .main_title .site_map .site_map_2 .menu_title a {
     display: block;
-    font-size: 14px;
+    font-size: 0.8vw;
     color: #555;
 }
 
@@ -439,7 +435,10 @@ main .page .main_contents {
 
 .main_contents {}
 
-.main_contents img {}
+.main_contents img {
+    width: 100%;
+    border: 1px solid #555;
+}
 
 .event_parti {
     width: 90%;
@@ -455,7 +454,7 @@ main .page .main_contents {
 .event_parti ul li > label {
     width: 100%;
     font-size: 25px;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 }
 
 .event_parti ul li > label:after {
@@ -468,7 +467,7 @@ main .page .main_contents {
 
 .event_parti ul li select {
     width: 100%;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     font-size: 25px;
     color: #fff;
     padding: 10px 0 10px 10px;
@@ -501,7 +500,7 @@ main .page .main_contents {
 
 .num_p > label {
     font-size: 25px;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     margin-bottom: 25px;
 }
 
@@ -524,7 +523,7 @@ main .page .main_contents {
 
 .quan a span {
     font-size: 28px;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 
 }
 
@@ -536,7 +535,7 @@ main .page .main_contents {
 .btn button {
     margin: 0 auto;
     font-size: 28px;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     color: #27a98f;
     border: 2px solid #27a98f;
     border-radius: 5px;
@@ -552,7 +551,7 @@ main .page .main_contents {
 
 /* ============== 768 =======================*/
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     header {
         background: #fff;
         height: 100%;
@@ -609,7 +608,7 @@ main .page .main_contents {
         position: fixed;
         right: -100%;
         top: 0;
-        width: 80%;
+        width: 90%;
         height: 100%;
         background: rgba(0, 0, 0, 0.9);
         z-index: -1;
@@ -617,13 +616,13 @@ main .page .main_contents {
     }
 
     .pop_up_ {
-        margin: 50px 0 0 60px;
-        transform: translateY(100%);
+        margin: 10vw 0 0 10vw;
+
     }
 
     .pop_up_ .pop_up_title {
         display: inline-block;
-        font-size: 35px;
+        font-size: 6vw;
         color: #e55358;
         margin-bottom: 15px;
     }
@@ -633,9 +632,9 @@ main .page .main_contents {
     }
 
     .pop_up_ span a {
-        font-size: 25px;
+        font-size: 4.5vw;
         color: #fff;
-        padding: 0 20px;
+        padding: 0 4vw;
     }
 
     .pop_up_ span a:hover {
@@ -684,7 +683,7 @@ main .page .main_contents {
         position: fixed;
         top: 12px;
         right: 60px;
-        font-family: "humun", serif;
+        font-family: 'Sam M';
         font-size: 1.5em;
         z-index: 4;
         color: #27a98f;
@@ -702,4 +701,90 @@ main .page .main_contents {
     main .page .main_title .site_map > .site_map_2 .menu_title {
         z-index: 8;
     }
+    .col-sm-9{
+        width: 100%;
+    }
+
+}
+/* =================== 1092 ================================*/
+
+@media (min-width:768px) and (max-width:1092px) {
+
+    /*============== 헤더 =============*/
+    .hd nav ul li > a {
+        font-size: 2.6vw;
+        padding: 20px 3.5vw;
+    }
+
+    .hd nav ul li div a {
+        padding: 7px 10px;
+        font-size: 2vw;
+    }
+
+    .pop_up_ .pop_up_title {
+        font-size: 3.5vw;
+    }
+
+    /*=============메인===============*/
+    .ticket{
+        transform: rotate(-90deg);
+        transform-origin: 100% -2%;
+        transition: .5s;
+
+        position: fixed;
+        z-index: 1;
+        top: 20%;
+        right: 1%;
+    }
+    
+   .ticket.active {
+        transform: rotate(0);
+    }
+    
+    .pop_ticket b{
+        cursor: pointer;
+    }
+    
+    
+
+
+    .info_event article > h3 {
+
+        font-size: 3.5vw;
+        letter-spacing: 7.6px;
+    }
+
+    .info_event article:nth-of-type(1) > h3:after {
+        width: 7vw;
+        transform: translate(-90%, 50%);
+    }
+
+    .info_event article:nth-of-type(2) > h3:after {
+        width: 12.5vw;
+        transform: translate(-91%, 50%);
+
+    }
+
+    .info_event article:nth-of-type(3) > h3:after {
+        width: 20vw;
+        transform: translate(-92%, 50%);
+    }
+
+    .info_event article p {
+        font-size: 2.5vw;
+    }
+
+    .link a article h3,
+    .com_03 h3 {
+        display: none;
+    }
+
+    .link a article p,
+    .link p {
+        display: none;
+    }
+
+
+
+
 }

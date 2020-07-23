@@ -28,17 +28,17 @@ header .logo a {
 header .logo a img {}
 
 header .header_title {
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 }
 
 header .header_title h2 {
-    font-size: 40px;
+    font-size: 3vw;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    padding: 10px 0;
+    padding: 0.5vw 0;
     border-radius: 10px;
     background-color: #27a98f;
     color: white;
@@ -47,8 +47,8 @@ header .header_title h2 {
 header .header_title ul {
     width: 60%;
     margin: 0 auto;
-    padding: 30px 0 90px 0;
-    font-size: 30px;
+    padding: 2vw 0;
+    font-size: 2vw;
     display: flex;
     flex-direction: column;
 
@@ -60,13 +60,6 @@ header .header_title ul li {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-}
-
-header .header_title ul li img {
-    margin-right: 20px;
-    width: 22px;
-    height: 75px;
-
 }
 
 header .header_title ul li a {
@@ -92,22 +85,21 @@ header footer {
 }
 
 header footer p {
-    font-family: "HCRDotum", serif;
-    white-space: pre-line;
-    font-size: 8px;
+    font-family: 'NanumGothic';
+    font-size: 0.2vw;
     color: #27a98f;
 }
 
 /*====================main========================*/
 .rt {
     position: absolute;
-    z-index:4;
+    z-index: 4;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     right: 70px;
     top: 20px;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 
 }
 
@@ -174,7 +166,7 @@ header footer p {
 
 
 .pop_up_ {
-    margin: 100px 0 0 120px;
+    margin: 100px 0 0 7vw;
 }
 
 .pop_up_ .pop_up_title {
@@ -189,14 +181,15 @@ header footer p {
 }
 
 .pop_up_ span a {
-    font-size: 30px;
+    font-size: 2vw;
     color: #fff;
-    padding: 0 40px;
+    padding: 0 2.5vw;
 }
 
 .pop_up_ span a:hover {
     color: #27a98f;
 }
+
 aside .menu-trigger {
     width: 36px;
     height: 30px;
@@ -250,6 +243,7 @@ aside .menu-trigger.active span:nth-of-type(2) {
 aside .menu-trigger.active span:nth-of-type(3) {
     transform: translateY(-12px) rotate(-45deg);
 }
+
 main {
     float: right !important;
 }
@@ -264,6 +258,7 @@ aside .ticket {
     top: 20%;
     right: 6%;
     z-index: 1;
+    transform-origin: 100% -2%;
 }
 
 aside .ticket .ticket_contents {
@@ -373,25 +368,27 @@ aside .ticket .sns a:hover {
 
 aside .ticket .sns a img {}
 
-aside .ticket .top {
+aside .top {
     width: 0;
     height: 0;
     border-right: 25px solid transparent;
     border-left: 25px solid transparent;
     border-bottom: 40px solid #27a98f;
-    position: relative;
-    top: 150%;
-    left: 0;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 3;
 }
 
-aside .ticket .top a {
+aside .top a {
     position: absolute;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     font-size: 25px;
     color: #fff;
     top: 10px;
     left: -12px;
 }
+
 aside select {
     background: none;
     border: none;
@@ -399,7 +396,7 @@ aside select {
     position: absolute;
     top: 2.3%;
     right: 1%;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     font-size: 1.5em;
     z-index: 1;
     color: #27a98f;
@@ -408,6 +405,7 @@ aside select {
 aside select option {
     color: #27a98f;
 }
+
 main .page {
     height: 100%;
     padding: 100px 29.734% 14.867% 14.867%;
@@ -415,7 +413,7 @@ main .page {
 }
 
 main .page .main_title {
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -423,7 +421,7 @@ main .page .main_title {
 }
 
 main .page .main_title h1 {
-    font-size: 85px;
+    font-size: 6vw;
     color: #27a98f;
 
 }
@@ -431,7 +429,7 @@ main .page .main_title h1 {
 main .page .main_title .site_map {
     align-items: flex-end;
     color: #555;
-    font-size: 20px;
+    font-size: 1.2vw;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -477,7 +475,7 @@ main .page .main_title .site_map > .site_map_2:hover .menu_title {
 
 main .page .main_title .site_map .site_map_2 .menu_title a {
     display: block;
-    font-size: 14px;
+    font-size: 0.8vw;
     color: #555;
 }
 
@@ -485,17 +483,19 @@ main .page .main_title .site_map .site_map_2 .menu_title a {
 main .page .main_contents {
     height: 100%;
     line-height: 1.8;
-    font-family: "HCRDotum", serif;
+    font-family: 'NanumGothic';
 }
-main .page .main_contents ul{
+
+main .page .main_contents ul {
     width: 100%;
     height: 100%;
 
 }
-main .page .main_contents ul li:nth-of-type(1){
+
+main .page .main_contents ul li:nth-of-type(1) {
     width: 100%;
-    height: 300px;
-    margin-bottom: 30px;
+    height: 19vw;
+    margin-bottom: 1vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -505,27 +505,29 @@ main .page .main_contents ul li:nth-of-type(1){
     color: #ce4c50;
 }
 
-main .page .main_contents ul li:nth-of-type(1) h2{
+main .page .main_contents ul li:nth-of-type(1) h2 {
     font-weight: bold;
-    font-size: 50px;
-    margin-top: 8%;
+    font-size: 3.5vw;
+    margin-top: 2vw;
 }
 
-main .page .main_contents ul .picture{
+main .page .main_contents ul .picture {
     width: 100%;
-    height: 200px;
+    height: 10vw;
     font-size: 0;
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5%;
 
 }
-main .page .main_contents ul .picture img{
+
+main .page .main_contents ul .picture img {
     width: 33%;
     height: 100%;
-     border-radius: 10px;
+    border-radius: 10px;
 }
-main .page .main_contents ul .picture img:hover{
+
+main .page .main_contents ul .picture img:hover {
     transform: scale(2);
 }
 
@@ -533,7 +535,7 @@ main .page .main_contents ul .picture img:hover{
 
 /*======================768======================*/
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     header {
         background: #fff;
         height: 100%;
@@ -567,11 +569,13 @@ main .page .main_contents ul .picture img:hover{
     header footer {
         display: none;
     }
-    .rt{
+
+    .rt {
         z-index: 15;
     }
+
     .menu-trigger {
-/*        transform: translate(30px, -82px);*/
+        /*        transform: translate(30px, -82px);*/
         z-index: 15;
     }
 
@@ -597,7 +601,7 @@ main .page .main_contents ul .picture img:hover{
 
     .pop_up_ {
         margin: 10vw 0 0 10vw;
- 
+
     }
 
     .pop_up_ .pop_up_title {
@@ -663,7 +667,7 @@ main .page .main_contents ul .picture img:hover{
         position: fixed;
         top: 12px;
         right: 60px;
-        font-family: "humun", serif;
+        font-family: 'Sam M';
         font-size: 1.5em;
         z-index: 4;
         color: #27a98f;
@@ -682,13 +686,96 @@ main .page .main_contents ul .picture img:hover{
         z-index: 8;
     }
 
+    .col-sm-9 {
+        width: 100%;
+    }
 
+    main .page .main_contents ul .picture {
+
+        height: 19vw;
+
+    }
 }
 
-    /*======================992======================*/
-    @media (min-width:992px) and (max-width:1169px) {}
+/* =================== 1092 ================================*/
+
+@media (min-width:768px) and (max-width:1092px) {
+
+    /*============== 헤더 =============*/
+    .hd nav ul li > a {
+        font-size: 2.6vw;
+        padding: 20px 3.5vw;
+    }
+
+    .hd nav ul li div a {
+        padding: 7px 10px;
+        font-size: 2vw;
+    }
+
+    .pop_up_ .pop_up_title {
+        font-size: 3.5vw;
+    }
+
+    /*=============메인===============*/
+    .ticket {
+        transform: rotate(-90deg);
+        transform-origin: 100% -2%;
+        transition: .5s;
+
+        position: fixed;
+        z-index: 1;
+        top: 20%;
+        right: 1%;
+    }
+
+    .ticket.active {
+        transform: rotate(0);
+    }
+
+    .pop_ticket b {
+        cursor: pointer;
+    }
+
+
+
+
+    .info_event article > h3 {
+
+        font-size: 3.5vw;
+        letter-spacing: 7.6px;
+    }
+
+    .info_event article:nth-of-type(1) > h3:after {
+        width: 7vw;
+        transform: translate(-90%, 50%);
+    }
+
+    .info_event article:nth-of-type(2) > h3:after {
+        width: 12.5vw;
+        transform: translate(-91%, 50%);
+
+    }
+
+    .info_event article:nth-of-type(3) > h3:after {
+        width: 20vw;
+        transform: translate(-92%, 50%);
+    }
+
+    .info_event article p {
+        font-size: 2.5vw;
+    }
+
+    .link a article h3,
+    .com_03 h3 {
+        display: none;
+    }
+
+    .link a article p,
+    .link p {
+        display: none;
+    }
+
+
+
 
 }
-
-/*======================1170======================*/
-@media (min-width:1170px) {}

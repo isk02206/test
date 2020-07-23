@@ -99,7 +99,6 @@
         </div>
 
         <div class="popup">
-            <div>
                 <div class="pop_ticket">
                     <b>TICKET</b>
                     <ul class="date">
@@ -127,7 +126,6 @@
                     <li><a href="https://www.instagram.com/accounts/login/?next=/p/Bn-kGaknWIF/" target="_blank"><img src="img/ic_ig.png" alt="instagram"></a></li>
                 </ul>
             </div>
-        </div>
 
         <div class="pop_top">
             <p class="top">
@@ -280,9 +278,9 @@
 
         <script>
             const menu = document.querySelector('.menu-trigger');
-            const sitemap = document.querySelector('.pop_up');
             const date_select = document.querySelectorAll('.date li a');
-            const buy = document.querySelector('.pop_ticket b');
+            const buy = document.querySelector('.popup');
+            const close = document.querySelector('.pop_up');
 
             menu.addEventListener('click', function() {
                 menu.classList.toggle('active');
@@ -291,6 +289,12 @@
             buy.addEventListener('click', function() {
                 buy.classList.toggle('active');
             });
+            
+            close.addEventListener('click', function() {
+                close.classList.toggle('active');
+            });
+            
+            
 
             let j = 0;
             for (let i = 0; i < date_select.length; i++) {

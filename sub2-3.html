@@ -90,12 +90,12 @@
                         <img src="img/sns_instagram.png">
                     </a>
                 </div>
+            </div>
 
-                <div class="top">
-                    <a href="#">
-                        TOP
-                    </a>
-                </div>
+            <div class="top">
+                <a href="#">
+                    TOP
+                </a>
             </div>
             <div class="rt">
                 <a class="menu-trigger">
@@ -253,6 +253,10 @@
 
         const date_select = document.querySelectorAll('.date a');
 
+        const buy = document.querySelector('.ticket');
+        buy.addEventListener('click', function() {
+            buy.classList.toggle('active');
+        });
 
         menu.addEventListener('click', function() {
             menu.classList.toggle('active');
@@ -274,19 +278,20 @@
         var minus = document.getElementById('minus')
         var quantity = document.getElementById('quantity');
         plus.addEventListener('click', function() {
-            if(k<9){
+            if (k < 9) {
                 k += 1;
                 quantity.textContent = k;
             }
         });
-        
-        minus.addEventListener('click',function(){
+
+        minus.addEventListener('click', function() {
             k -= 1;
-            if(k <= 0){
+            if (k <= 0) {
                 k = 0;
             }
             quantity.textContent = k;
         })
+
     </script>
 
 
@@ -294,4 +299,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>

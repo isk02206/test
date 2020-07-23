@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Sam M';
+    src: url('SamM-HM.woff2') format('woff2'),
+        url('SamM-HM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('NanumGothic.woff2') format('woff2'),
+        url('NanumGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 html,
 body {
     margin: 0;
@@ -39,3 +57,4 @@ a {
 table {
     border-collapse: collapse;
 }
+

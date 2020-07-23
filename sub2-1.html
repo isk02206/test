@@ -91,11 +91,12 @@
                     </a>
                 </div>
 
-                <div class="top">
-                    <a href="#">
-                        TOP
-                    </a>
-                </div>
+
+            </div>
+            <div class="top">
+                <a href="#">
+                    TOP
+                </a>
             </div>
             <div class="rt">
                 <a class="menu-trigger">
@@ -241,6 +242,11 @@
         const pop_up = document.querySelector('.pop_up');
 
         const date_select = document.querySelectorAll('.date a');
+        const buy = document.querySelector('.ticket');
+        
+        buy.addEventListener('click', function() {
+                buy.classList.toggle('active');
+            });
 
 
         menu.addEventListener('click', function() {

@@ -47,7 +47,7 @@ header {}
     position: relative;
     padding: 20px 45px;
     color: #27a98f;
-    font-family: humun, serif;
+    font-family: 'Sam M';
     font-size: 30px;
 }
 
@@ -66,7 +66,7 @@ header {}
 .hd nav ul li div a {
     display: block;
     padding: 7px 10px;
-    font-family: humun, serif;
+    font-family: 'Sam M';
     font-size: 25px;
     color: #27a98f;
 }
@@ -110,7 +110,7 @@ main {
     right: 6%;
     top: 3%;
 
-    font-family: humun, serif;
+    font-family: 'Sam M';
     font-size: 20px;
     margin-bottom: 40px;
     border: none;
@@ -180,6 +180,11 @@ main {
 .menu-trigger.active + .pop_up {
     right: 0;
 }
+
+.pop_up.active {
+    right: -100%;
+}
+
 
 
 .pop_up_ {
@@ -273,7 +278,7 @@ main {
     padding: 8px 0;
     margin-top: 8px;
     text-align: center;
-    font-family: dotum;
+    font-family: 'NanumGothic';
 }
 
 .date li a.active {
@@ -299,7 +304,7 @@ main {
 
 .p_num span {
     display: inline-block;
-    font-family: dotum;
+    font-family: 'NanumGothic';
     font-size: 26px;
     color: #12252d;
     margin: 5px;
@@ -356,7 +361,7 @@ h4,
 span,
 p,
 a {
-    font-family: humun, serif;
+    font-family: 'Sam M';
 
 }
 
@@ -476,7 +481,7 @@ a {
 
 .info_event article figure figcaption h3,
 .info_event article figure figcaption p {
-    font-family: dotum serif;
+    font-family: 'NanumGothic';
     line-height: 2;
     color: #fff;
 }
@@ -667,8 +672,10 @@ footer span {
 @media (max-width:768px) {
     header {
         width: 100%;
-        height: 30px;
+        height: 50px;
     }
+
+    header:after {}
 
     .hd {
         width: 100%;
@@ -750,15 +757,15 @@ footer span {
 
     /*===== event =======*/
     .sub {
-        font-size: 3.5vw;
+        font-size: 6vw;
         margin: 90px 0 50px 0;
         padding: 15px 30px;
     }
 
     .sub a {
         font-size: 3vw;
-        padding: 12px 20px;
-        margin-left: 25px;
+        padding: 12px 2vw;
+        margin-left: 2vw;
     }
 
 
@@ -791,7 +798,7 @@ footer span {
 
     .info_event article figure figcaption h3,
     .info_event article figure figcaption p {
-        font-family: dotum serif;
+        font-family: 'NanumGothic';
         line-height: 2;
         color: #fff;
     }
@@ -834,6 +841,18 @@ footer span {
 
     }
 
+
+    .link a article h3,
+    .com_03 h3 {
+        font-size: 9vw;
+    }
+
+    .link a article p,
+    .link p {
+        font-size: 5vw;
+    }
+
+
 }
 
 
@@ -867,13 +886,16 @@ footer span {
         top: 20%;
         right: 1%;
     }
-    
-   .popup .pop_ticket b.active .popup{
-        transform: rotate(0);
 
+    .popup.active {
+        transform: rotate(0);
     }
-    
-    
+
+    .pop_ticket b {
+        cursor: pointer;
+    }
+
+
 
 
     .info_event article > h3 {
@@ -904,23 +926,13 @@ footer span {
 
     .link a article h3,
     .com_03 h3 {
-        display: none;
+        font-size: 4vw;
     }
 
     .link a article p,
     .link p {
-        display: none;
+        font-size: 2vw;
     }
-
-
-
-
-}
-
-
-
-
-
 
 
 

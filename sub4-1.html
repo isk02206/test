@@ -91,11 +91,11 @@
                     </a>
                 </div>
 
-                <div class="top">
-                    <a href="#">
-                        TOP
-                    </a>
-                </div>
+            </div>
+            <div class="top">
+                <a href="#">
+                    TOP
+                </a>
             </div>
             <div class="rt">
                 <a class="menu-trigger">
@@ -165,28 +165,28 @@
                             <ul>
                                 <li>
                                     <label>
-                                       <img src="img/icon_direction_right.png">
+                                        <img src="img/icon_direction_right.png">
                                         <p>CONTACT NAME</p>
                                     </label>
                                     <input type="text" name="name" required placeholder="PLEASE CORRECT YOUR NAME">
                                 </li>
                                 <li>
                                     <label>
-                                       <img src="img/icon_direction_right.png">
+                                        <img src="img/icon_direction_right.png">
                                         <p>E-MAIL</p>
                                     </label>
                                     <input type="text" name="name" required placeholder="PLEASE CORRECT YOUR E-MAIL">
                                 </li>
                                 <li>
                                     <label>
-                                       <img src="img/icon_direction_right.png">
+                                        <img src="img/icon_direction_right.png">
                                         <p>PHONE NUMBER</p>
                                     </label>
                                     <input type="text" name="name" required placeholder="PLEASE CORRECT YOUR PHONE NUMBER">
                                 </li>
                                 <li>
                                     <label>
-                                       <img src="img/icon_direction_right.png">
+                                        <img src="img/icon_direction_right.png">
                                         <p>MESSAGE</p>
                                     </label>
                                     <textarea required placeholder="PLEASE CORRECT YOUR MESSAGE"></textarea>
@@ -195,7 +195,7 @@
                                     <input type="submit" class="send" value="SEND">
                                 </li>
                             </ul>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -209,6 +209,10 @@
 
         const date_select = document.querySelectorAll('.date a');
 
+        const buy = document.querySelector('.ticket');
+        buy.addEventListener('click', function() {
+            buy.classList.toggle('active');
+        });
 
         menu.addEventListener('click', function() {
             menu.classList.toggle('active');
@@ -229,20 +233,20 @@
         var minus = document.getElementById('minus')
         var quantity = document.getElementById('quantity');
         plus.addEventListener('click', function() {
-            if(k<9){
+            if (k < 9) {
                 k += 1;
                 quantity.textContent = k;
             }
         });
-        
-        minus.addEventListener('click',function(){
+
+        minus.addEventListener('click', function() {
             k -= 1;
-            if(k <= 0){
+            if (k <= 0) {
                 k = 0;
             }
             quantity.textContent = k;
         })
-        
+
     </script>
 
 
@@ -250,4 +254,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>

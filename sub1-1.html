@@ -90,13 +90,13 @@
                     <img src="img/sns_instagram.png">
                 </a>
             </div>
-
+        </div>
             <div class="top">
                 <a href="#">
                     TOP
                 </a>
             </div>
-        </div>
+      
         <div class="rt">
             <a class="menu-trigger">
                 <span></span>
@@ -177,7 +177,9 @@
         const menu = document.querySelector('.menu-trigger');
 
         const pop_up = document.querySelector('.pop_up');
-
+        
+        const buy = document.querySelector('.ticket');
+        
         const date_select = document.querySelectorAll('.date a');
 
 
@@ -185,6 +187,9 @@
             menu.classList.toggle('active');
             //        pop_up.classList.toggle('active');
         });
+        buy.addEventListener('click', function() {
+                buy.classList.toggle('active');
+            });
 
         let j = 0;
         for (let i = 0; i < date_select.length; i++) {

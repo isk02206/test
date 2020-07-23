@@ -84,11 +84,11 @@
                     </a>
                 </div>
 
-                <div class="top">
-                    <a href="#">
-                        TOP
-                    </a>
-                </div>
+            </div>
+            <div class="top">
+                <a href="#">
+                    TOP
+                </a>
             </div>
             <div class="rt">
                 <a class="menu-trigger">
@@ -163,15 +163,15 @@
                             <img src="img/poster2.jpg" alt="poster">
 
                             <div class="tket">
-                               
+
                                 <div class="tk">
-                                   <a>
-                                   <article class="tk_date">
-                                    <h3>SAT
-                                        20.08.22</h3>
-                                        <p>
-                                        가평 자라섬</p>
-                                    </article>
+                                    <a>
+                                        <article class="tk_date">
+                                            <h3>SAT
+                                                20.08.22</h3>
+                                            <p>
+                                                가평 자라섬</p>
+                                        </article>
                                     </a>
                                     <div class="qnt">
                                         <a><span>1</span></a>
@@ -182,17 +182,17 @@
                                     </div>
 
                                     <p><button>구매하기</button></p>
-                                    
+
                                 </div>
-                                
+
                                 <div class="tk">
-                                   <a>
-                                   <article class="tk_date">
-                                    <h3>SUN
-                                        20.08.23</h3>
-                                        <p>
-                                        가평 자라섬</p>
-                                    </article>
+                                    <a>
+                                        <article class="tk_date">
+                                            <h3>SUN
+                                                20.08.23</h3>
+                                            <p>
+                                                가평 자라섬</p>
+                                        </article>
                                     </a>
                                     <div class="qnt">
                                         <a><span>1</span></a>
@@ -203,7 +203,7 @@
                                     </div>
 
                                     <p><button>구매하기</button></p>
-                                    
+
                                 </div>
 
                             </div>
@@ -222,12 +222,17 @@
         const pop_up = document.querySelector('.pop_up');
         const date_select = document.querySelectorAll('.date a');
         const ticket_date = document.querySelectorAll('.tk a');
-        
+        const buy = document.querySelector('.ticket');
+        buy.addEventListener('click', function() {
+            buy.classList.toggle('active');
+        });
+
+
         menu.addEventListener('click', function() {
             menu.classList.toggle('active');
             pop_up.classList.toggle('active');
         });
-        
+
         let j = 0;
         for (let i = 0; i < date_select.length; i++) {
             date_select[i].addEventListener('click', function() {
@@ -236,8 +241,8 @@
                 j = i;
             })
         };
-        
-         let f = 0;
+
+        let f = 0;
         for (let y = 0; y < ticket_date.length; y++) {
             ticket_date[y].addEventListener('click', function() {
                 ticket_date[f].classList.remove('active');
@@ -245,8 +250,8 @@
                 f = y;
             })
         };
-        
-        
+
+
 
         var k = 0;
         k < 10;
@@ -254,19 +259,20 @@
         var minus = document.getElementById('minus')
         var quantity = document.getElementById('quantity');
         plus.addEventListener('click', function() {
-            if(k<9){
+            if (k < 9) {
                 k += 1;
                 quantity.textContent = k;
             }
         });
-        
-        minus.addEventListener('click',function(){
+
+        minus.addEventListener('click', function() {
             k -= 1;
-            if(k <= 0){
+            if (k <= 0) {
                 k = 0;
             }
             quantity.textContent = k;
         })
+
     </script>
 
 
@@ -274,4 +280,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>
